@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <aside>
+        <button>☰</button>
+        <button>→</button>
+        <h3>Period</h3>
+        <select name="months" id="">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+        <select name="year" id="">
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+        </select>
+
+        <ul>
+            <li>Projects</li>
+            <li>Employees</li>
+        </ul>
+    </aside>
+    <main>
+        <section>
+            <h1>Projects</h1>
+            <div class="projects__btns">
+                <button class="projects__btn">+ Add Project</button>
+                <button class="projects__btn">Seed Data</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Company Name
+                            <span>⇅</span><span>⌕</span>
+                        </th>
+                        <th>Project Name
+                            <span>⇅</span><span>⌕</span>
+                        </th>
+                        <th>
+                            Budget
+                            <span>⇅</span>
+                        </th>
+                        <th>
+                            Employee Capacity 
+                            <span>⇅</span>
+                        </th>
+                        <th>Employees</th>
+                        <th>Estimated Income 
+                            <span>⇅</span>
+                        </th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="info">
+                <strong>Total Estimated Income:</strong>
+                <span>$0.00</span>
+            </div>
+        </section>
+        <section>
+            <h2>Employees</h2>
+            <button class="projects__btn">+ Add Employee</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name
+                            <span>⇅</span><span>⌕</span>
+                        </th>
+                        <th>Surname
+                            <span>⇅</span><span>⌕</span>
+                        </th>
+                        <th>
+                            Age 
+                            <span>⇅</span>
+                        </th>
+                        <th>
+                            Position
+                            <span>⇅</span><span>⌕</span>
+                        </th>
+                        <th>Salary 
+                            <span>⇅</span>
+                        </th>
+                        <th>Estimated Payment 
+                            <span>⇅</span>
+                        </th>
+                        <th>Project
+                            <span>⇅</span><span>⌕</span>
+                        </th>
+                        <th>Projected Income  
+                            <span>⇅</span>
+                        </th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
