@@ -37,83 +37,87 @@
             <li class="nav__item">Employees</li>
         </ul>
     </aside>
-    <div class="main">
-        <header class="header">
-            <h1 class="header__title">Projects</h1>
-            <div class="projects__btns">
-                <button class="projects__btn">+ Add Project</button>
-                <button class="projects__btn">Seed Data</button>
+    <main>
+        <div class="main">
+            <header class="header">
+                <h1 class="header__title">Projects</h1>
+                <div class="projects__btns">
+                    <button class="projects__btn">+ Add Project</button>
+                    <button class="projects__btn">Seed Data</button>
+                </div>
+            </header>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="sort">Company Name
+                            <span class="sort__icon">⇅</span><span class="search__icon">⌕</span>
+                        </th>
+                        <th class="sort">Project Name
+                            <span class="sort__icon">⇅</span><span class="search__icon">⌕</span>
+                        </th>
+                        <th class="sort">
+                            Budget
+                            <span class="sort__icon">⇅</span>
+                        </th>
+                        <th class="sort">
+                            Employee Capacity 
+                            <span class="sort__icon">⇅</span>
+                        </th>
+                        <th>Employees</th>
+                        <th class="sort">Estimated Income 
+                            <span class="sort__icon">⇅</span>
+                        </th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="info">
+                <strong>Total Estimated Income:</strong>
+                <span class="info__amount pos">$0.00</span>
             </div>
-        </header>
-        <table>
-            <thead>
-                <tr>
-                    <th class="sort">Company Name
-                        <span class="sort__icon">⇅</span><span class="search__icon">⌕</span>
-                    </th>
-                    <th class="sort">Project Name
-                        <span class="sort__icon">⇅</span><span class="search__icon">⌕</span>
-                    </th>
-                    <th class="sort">
-                        Budget
-                        <span class="sort__icon">⇅</span>
-                    </th>
-                    <th class="sort">
-                        Employee Capacity 
-                        <span class="sort__icon">⇅</span>
-                    </th>
-                    <th>Employees</th>
-                    <th class="sort">Estimated Income 
-                        <span class="sort__icon">⇅</span>
-                    </th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
-        <div class="info">
-            <strong>Total Estimated Income:</strong>
-            <span class="info__amount pos">$0.00</span>
         </div>
-    </div>
-    <!-- <section>
-        <h2>Employees</h2>
-        <button class="projects__btn">+ Add Employee</button>
-        <table>
-            <thead>
-                <tr>
-                    <th>Name
-                        <span>⇅</span><span>⌕</span>
-                    </th>
-                    <th>Surname
-                        <span>⇅</span><span>⌕</span>
-                    </th>
-                    <th>
-                        Age 
-                        <span>⇅</span>
-                    </th>
-                    <th>
-                        Position
-                        <span>⇅</span><span>⌕</span>
-                    </th>
-                    <th>Salary 
-                        <span>⇅</span>
-                    </th>
-                    <th>Estimated Payment 
-                        <span>⇅</span>
-                    </th>
-                    <th>Project
-                        <span>⇅</span><span>⌕</span>
-                    </th>
-                    <th>Projected Income  
-                        <span>⇅</span>
-                    </th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
-    </section> -->
+        <div class="main">
+            <header class="header">
+                <h2 class="header__title">Employees</h2>
+                <button class="projects__btn">+ Add Employee</button>
+            </header>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="sort">Name
+                            <span class="sort__icon">⇅</span><span class="search__icon">⌕</span>
+                        </th>
+                        <th class="sort">Surname
+                            <span class="sort__icon">⇅</span><span class="search__icon">⌕</span>
+                        </th>
+                        <th class="sort">
+                            Age 
+                            <span class="sort__icon">⇅</span>
+                        </th>
+                        <th class="sort">
+                            Position
+                            <span class="sort__icon">⇅</span><span class="search__icon">⌕</span>
+                        </th>
+                        <th class="sort">Salary 
+                            <span class="sort__icon">⇅</span>
+                        </th>
+                        <th class="sort">Estimated Payment 
+                            <span class="sort__icon">⇅</span>
+                        </th>
+                        <th class="sort">Project
+                            <span class="sort__icon">⇅</span><span class="search__icon">⌕</span>
+                        </th>
+                        <th class="sort">Projected Income  
+                            <span class="sort__icon">⇅</span>
+                        </th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
     <script src="./script.js"></script>
 </body>
 </html>
