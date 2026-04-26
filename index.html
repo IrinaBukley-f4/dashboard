@@ -7,33 +7,34 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <aside>
-        <button>☰</button>
+    <aside class="side-pannel">
+        <button class="side-pannel__burger">☰</button>
         <!-- <button>→</button> -->
-        <h3>Period</h3>
-        <select name="months" id="">
-            <option value="January">January</option>
-            <option value="February">February</option>
-            <option value="March">March</option>
-            <option value="April">April</option>
-            <option value="May">May</option>
-            <option value="June">June</option>
-            <option value="July">July</option>
-            <option value="August">August</option>
-            <option value="September">September</option>
-            <option value="October">October</option>
-            <option value="November">November</option>
-            <option value="December">December</option>
-        </select>
-        <select name="year" id="">
-            <option value="2025">2025</option>
-            <option value="2026">2026</option>
-            <option value="2027">2027</option>
-        </select>
-
+        <h3 class="side-pannel__title">Period</h3>
+        <div class="period-block">
+            <select name="months" id="">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+            <select name="year" id="">
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+            </select>
+        </div>
         <ul>
-            <li>Projects</li>
-            <li>Employees</li>
+            <li class="nav__item active">Projects</li>
+            <li class="nav__item">Employees</li>
         </ul>
     </aside>
     <main>

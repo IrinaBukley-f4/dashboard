@@ -3,4 +3,79 @@
     margin: 0;
     padding: 0;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+}
+body {
+    display: flex;
+    height: 100vh;
+    background-color: rgb(236, 240, 241);
+    margin: 0px;
+    overflow: hidden;
+}
+.side-pannel {
+    width: 250px;
+    background-color: rgb(44, 62, 80);
+    color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s;
+
+    .side-pannel__burger {
+        background-color: rgb(52, 73, 94);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        text-align: center;
+        font-size: 1em;
+        border-width: medium;
+        border-style: none;
+        border-color: currentcolor;
+        border-image: initial;
+        padding: 15px;
+        margin: 0px;
+    }
+    .side-pannel__burger:hover {
+        background-color: rgb(74, 98, 122);
+    }
+    .side-pannel__burger:active {
+        border-style: inset;
+    }
+    .side-pannel__title {
+        color: rgb(236, 240, 241);
+        font-size: 1.1em;
+        text-align: center;
+        margin: 20px 0px 15px;
+    }
+    .period-block {
+        padding: 0 20px 20px;
+    }
+    .period-block select{
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        background-color: rgb(52, 73, 94);
+        color: rgb(236, 240, 241);
+        font-size: 1em;
+        cursor: pointer;
+        padding: 10px;
+        border-width: medium;
+        border-style: none;
+        border-color: currentcolor;
+        border-image: initial;
+        border-radius: 5px;
+        font-weight: 600;
+        transition: background-color 0.2s;
+    }
+    .nav__item {
+        color: rgb(236, 240, 241);
+        padding: 15px 20px;
+        text-decoration: none;
+        transition: background-color 0.2s;
+        border-left: 3px solid transparent;
+    }
+    .nav__item.active {
+        background-color: rgb(52, 73, 94);
+        border-left-color: rgb(52, 152, 219);
+        font-weight: 700;
+    }
 }
