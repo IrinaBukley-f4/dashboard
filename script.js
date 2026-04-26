@@ -17,3 +17,17 @@ emlpoyeesBtnEl.addEventListener('click', () => {
      projectsBlockEl.classList.add('hide');
     emlpoyeesBlockEl.classList.remove('hide');
 });
+
+// hide aside pannel
+const burgerBtnEl = document.querySelector('.side-pannel__burger');
+const rightBtnEl = document.querySelector('.right');
+const sidePanelEl = document.querySelector('.side-pannel');
+
+burgerBtnEl.addEventListener('click', () => {
+    rightBtnEl.classList.remove('hidden');
+    sidePanelEl.classList.add('hidden');
+});
+rightBtnEl.addEventListener('click', () => {
+    rightBtnEl.classList.add('hidden');
+    sidePanelEl.classList.remove('hidden');
+})
