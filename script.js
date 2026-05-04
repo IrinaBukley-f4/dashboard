@@ -30,4 +30,10 @@ burgerBtnEl.addEventListener('click', () => {
 rightBtnEl.addEventListener('click', () => {
     rightBtnEl.classList.add('hidden');
     sidePanelEl.classList.remove('hidden');
-})
+});
+
+// get current data in select
+
+let date = new Date();
+document.querySelector('#months').value = date.getMonth() + 1;
+document.querySelector('#years').value = date.getUTCFullYear();
