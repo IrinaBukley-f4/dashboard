@@ -42,7 +42,7 @@
             <header class="header">
                 <h1 class="header__title">Projects</h1>
                 <div class="projects__btns">
-                    <button class="projects__btn">+ Add Project</button>
+                    <button id="add-proj-btn" class="projects__btn">+ Add Project</button>
                     <button class="projects__btn">Seed Data</button>
                 </div>
             </header>
@@ -75,6 +75,32 @@
             <div class="info">
                 <strong>Total Estimated Income:</strong>
                 <span class="info__amount pos">$0.00</span>
+            </div>
+            <div class="project__popup">
+                <h3>Add New Project</h3>
+                <div class="divider"></div>
+                <form action="">
+                    <div class="input__block">
+                        <label for="">Project Name: *</label>
+                        <input type="text">
+                    </div>
+                    <div class="input__block">
+                        <label for="">Company Name: *</label>
+                        <input type="text">
+                    </div>
+                    <div class="input__block">
+                        <label for="">Budget: *</label>
+                        <input type="text">
+                    </div>
+                    <div class="input__block">
+                        <label for="">Employee Capacity: *</label>
+                        <input type="text">
+                    </div>
+                    <div class="btns__block">
+                        <button id="add-proj" disabled>Add</button>
+                        <button id="cancel-proj">Cancel</button>
+                    </div>
+                </form>
             </div>
         </div>
         <div id="employee-block" class="content hide">

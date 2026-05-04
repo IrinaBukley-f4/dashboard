@@ -37,3 +37,14 @@ rightBtnEl.addEventListener('click', () => {
 let date = new Date();
 document.querySelector('#months').value = date.getMonth() + 1;
 document.querySelector('#years').value = date.getUTCFullYear();
+
+// open project modal
+const addProjBtnEl = document.querySelector('#add-proj-btn');
+const projectPopupEl = document.querySelector('.project__popup');
+const cancelProjEl = document.querySelector('.cancel-proj');
+addProjBtnEl.addEventListener('click', () => {
+    projectPopupEl.classList.add('open');
+});
+cancelProjEl.addEventListener('click', () => {
+    projectPopupEl.classList.remove('open');
+});
