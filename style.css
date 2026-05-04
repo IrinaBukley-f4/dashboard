@@ -253,7 +253,7 @@ th.sort:hover .sort__icon {
 .input__block label {
     margin-bottom: 10px;
 }
-.input__block input {
+.input__block input, #position-select {
     font-size: 16px;
     padding: 5px;
 }

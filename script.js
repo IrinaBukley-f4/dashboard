@@ -153,3 +153,118 @@ addProjEl.addEventListener('click', () => {
     }
 });
 
+// employee form validation
+
+const nameEmployeeEl = document.querySelector('#empl-name-input');
+const surnameEl = document.querySelector('#surname-input');
+const birthEl = document.querySelector('#birth-input');
+const positionEl = document.querySelector('#position-select');
+const salaryEl = document.querySelector('#salary-input');
+const addEmplPopupEl = document.querySelector('#add-empl');
+let nameEmlplFlag = false;
+let surnameFlag = false;
+let birthFlag = false;
+let positionFlag = false;
+let salaryFlag = false;
+const erNameEmplEl = document.querySelector('#er-name-empl');
+const erSurnameEl = document.querySelector('#er-surname');
+const erBirthEl = document.querySelector('#er-date');
+const erPositionEl = document.querySelector('#er-position');
+const erSalaryEl = document.querySelector('#er-salary');
+
+nameEmployeeEl.addEventListener('input', (e) => {
+   if (e.target.value.length < 3) {
+        nameEmployeeEl.classList.add('red');
+        nameEmlplFlag = false;
+        erNameEmplEl.innerHTML = 'Name must be at least 3 characters and contain only letters';
+    }  else {
+        nameEmployeeEl.classList.remove('red');
+        nameEmlplFlag = true;
+        erNameEmplEl.innerHTML = '';
+    }
+    if(nameEmlplFlag && surnameFlag && birthFlag && positionFlag && salaryFlag) {
+        addEmplPopupEl.disabled = false;
+    } else {
+        addEmplPopupEl.disabled = true;
+    }
+});
+
+surnameEl.addEventListener('input', (e) => {
+    if (e.target.value.length < 3) {
+        surnameEl.classList.add('red');
+        surnameFlag = false;
+        erSurnameEl.innerHTML = 'Surname must be at least 3 characters and contain only letters';
+    } else {
+        surnameEl.classList.remove('red');
+        surnameFlag = true;
+        erSurnameEl.innerHTML = '';
+    }
+    if(nameEmlplFlag && surnameFlag && birthFlag && positionFlag && salaryFlag) {
+        addEmplPopupEl.disabled = false;
+    } else {
+        addEmplPopupEl.disabled = true;
+    }
+});
+birthEl.addEventListener('input', (e) => {
+    function birthDateToAge(birthDate) {
+        birthDate = new Date(birthDate);
+        var now = new Date(),
+        age = now.getFullYear() - birthDate.getFullYear();
+        return now.setFullYear(1972) < birthDate.setFullYear(1972) ? age - 1 : age;
+    }
+
+        let inputValue = e.target.value;
+    let age = birthDateToAge(inputValue);
+    if ( age < 18) {
+        birthEl.classList.add('red')
+        birthFlag = false;
+        erBirthEl.innerHTML = 'You must be at least 18 years old';
+    } else {
+        birthEl.classList.remove('red');
+        birthFlag = true;
+         erBirthEl.innerHTML = '';
+    }
+   if(nameEmlplFlag && surnameFlag && birthFlag && positionFlag && salaryFlag) {
+        addEmplPopupEl.disabled = false;
+    } else {
+        addEmplPopupEl.disabled = true;
+    }
+});
+positionEl.addEventListener('input', (e) => {
+    if (e.target.value.length <= 0) {
+        positionEl.classList.add('red')
+        positionFlag = false;
+        erPositionEl.innerHTML = 'Please select a position';
+    } else {
+        positionEl.classList.remove('red');
+        positionFlag = true;
+         erPositionEl.innerHTML = '';
+    }
+   if(nameEmlplFlag && surnameFlag && birthFlag && positionFlag && salaryFlag) {
+        addEmplPopupEl.disabled = false;
+    } else {
+        addEmplPopupEl.disabled = true;
+    }
+});
+salaryEl.addEventListener('input', (e) => {
+    if (e.target.value <= 0)  {
+        salaryEl.classList.add('red')
+        salaryFlag = false;
+        erSalaryEl.innerHTML = 'Salary must be greater than 0';
+    } else {
+        salaryEl.classList.remove('red');
+        salaryFlag = true;
+        erSalaryEl.innerHTML = '';
+    }
+    if(nameEmlplFlag && surnameFlag && birthFlag && positionFlag && salaryFlag) {
+        addEmplPopupEl.disabled = false;
+    } else {
+        addEmplPopupEl.disabled = true;
+    }
+});
+addEmplPopupEl.addEventListener('click', () => {
+    employeePopupEl.classList.remove('open');
+    if(nameEmlplFlag && surnameFlag && birthFlag && positionFlag && salaryFlag) {
+        addEmplPopupEl.disabled = false;
+    }
+});
