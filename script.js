@@ -93,8 +93,11 @@ nameEl.addEventListener('input', (e) => {
     }
     if(nameFlag && companyFlag && budjetFlag && capacityFlag) {
         addProjEl.disabled = false;
+    } else {
+        addProjEl.disabled = true;
     }
 });
+
 companyEl.addEventListener('input', (e) => {
     if (e.target.value.length < 2) {
         companyEl.classList.add('red');
@@ -106,8 +109,10 @@ companyEl.addEventListener('input', (e) => {
         erCompanyEl.innerHTML = '';
     }
      if(nameFlag && companyFlag && budjetFlag && capacityFlag) {
-    addProjEl.disabled = false;
-}
+        addProjEl.disabled = false;
+    } else {
+        addProjEl.disabled = true;
+    }
 });
 budjetEl.addEventListener('input', (e) => {
     if (e.target.value <= 0) {
@@ -120,8 +125,10 @@ budjetEl.addEventListener('input', (e) => {
          erBudjetEl.innerHTML = '';
     }
     if(nameFlag && companyFlag && budjetFlag && capacityFlag) {
-    addProjEl.disabled = false;
-}
+        addProjEl.disabled = false;
+    } else {
+        addProjEl.disabled = true;
+    }
 });
 capacityEl.addEventListener('input', (e) => {
     if (e.target.value < 1)  {
@@ -134,8 +141,10 @@ capacityEl.addEventListener('input', (e) => {
         erCapacityEl.innerHTML = '';
     }
      if(nameFlag && companyFlag && budjetFlag && capacityFlag) {
-    addProjEl.disabled = false;
-}
+        addProjEl.disabled = false;
+    } else {
+        addProjEl.disabled = true;
+    }
 });
 addProjEl.addEventListener('click', () => {
     projectPopupEl.classList.remove('open');
