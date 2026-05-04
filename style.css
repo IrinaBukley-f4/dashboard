@@ -257,6 +257,9 @@ th.sort:hover .sort__icon {
     font-size: 16px;
     padding: 5px;
 }
+.input__block input.red {
+    border-color: red;
+}
 .btns__block {
     display: flex;
     justify-content: end;
@@ -273,4 +276,11 @@ th.sort:hover .sort__icon {
     height: 2px;
     background-color:rgb(96, 141, 106);
     margin-top: 10px;
+}
+button {
+    cursor: pointer;
+}
+.error {
+    color: red;
+    font-size: 14px;
 }
