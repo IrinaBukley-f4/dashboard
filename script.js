@@ -14,7 +14,7 @@ projectsBtnEl.addEventListener('click', () => {
 emlpoyeesBtnEl.addEventListener('click', () => {
     emlpoyeesBtnEl.classList.add('active');
     projectsBtnEl.classList.remove('active');
-     projectsBlockEl.classList.add('hide');
+    projectsBlockEl.classList.add('hide');
     emlpoyeesBlockEl.classList.remove('hide');
 });
 
@@ -41,10 +41,26 @@ document.querySelector('#years').value = date.getUTCFullYear();
 // open project modal
 const addProjBtnEl = document.querySelector('#add-proj-btn');
 const projectPopupEl = document.querySelector('.project__popup');
-const cancelProjEl = document.querySelector('.cancel-proj');
+const cancelProjEl = document.querySelector('#cancel-proj');
+
 addProjBtnEl.addEventListener('click', () => {
     projectPopupEl.classList.add('open');
 });
-cancelProjEl.addEventListener('click', () => {
-    projectPopupEl.classList.remove('open');
+if(cancelProjEl) {
+    cancelProjEl.addEventListener('click', () => {
+        projectPopupEl.classList.remove('open');
+    });
+}
+
+const addEmployeeBtnEl = document.querySelector('#add-empl-btn');
+const employeePopupEl = document.querySelector('.employee__popup');
+const cancelEmployeeEl = document.querySelector('#cancel-empl');
+
+addEmployeeBtnEl.addEventListener('click', () => {
+    employeePopupEl.classList.add('open');
 });
+if(cancelEmployeeEl) {
+    cancelEmployeeEl.addEventListener('click', () => {
+        employeePopupEl.classList.remove('open');
+    });
+}

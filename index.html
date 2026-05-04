@@ -96,17 +96,17 @@
                         <label for="">Employee Capacity: *</label>
                         <input type="text">
                     </div>
-                    <div class="btns__block">
-                        <button id="add-proj" disabled>Add</button>
-                        <button id="cancel-proj">Cancel</button>
-                    </div>
                 </form>
+                <div class="btns__block">
+                    <button id="add-proj" disabled>Add</button>
+                    <button id="cancel-proj">Cancel</button>
+                </div>
             </div>
         </div>
         <div id="employee-block" class="content hide">
             <header class="header">
                 <h2 class="header__title">Employees</h2>
-                <button class="projects__btn">+ Add Employee</button>
+                <button id="add-empl-btn" class="projects__btn">+ Add Employee</button>
             </header>
             <table>
                 <thead>
@@ -142,6 +142,36 @@
                 </thead>
                 <tbody></tbody>
             </table>
+            <div class="employee__popup">
+                <h3>Add New Employee</h3>
+                <div class="divider"></div>
+                <form action="">
+                    <div class="input__block">
+                        <label for="">Name: *</label>
+                        <input type="text">
+                    </div>
+                    <div class="input__block">
+                        <label for="">Surname: *</label>
+                        <input type="text">
+                    </div>
+                    <div class="input__block">
+                        <label for="">Date of Birth: *</label>
+                        <input type="text">
+                    </div>
+                    <div class="input__block">
+                        <label for="">Position: *</label>
+                        <input type="text">
+                    </div>
+                    <div class="input__block">
+                        <label for="">Salary: *</label>
+                        <input type="text">
+                    </div>
+                </form>
+                <div class="btns__block">
+                    <button id="add-empl" disabled>Add</button>
+                    <button id="cancel-empl">Cancel</button>
+                </div>
+            </div>
         </div>
     </main>
     <script src="./script.js"></script>

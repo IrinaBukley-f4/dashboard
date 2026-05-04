@@ -224,7 +224,7 @@ th.sort:hover .sort__icon {
 .right.hidden {
     display: none;
 }
-.project__popup {
+.project__popup, .employee__popup {
     position: fixed;
     top: 0;
     right: 0;
@@ -240,7 +240,7 @@ th.sort:hover .sort__icon {
     visibility: hidden;
     opacity: 0
 }
-.project__popup.open {
+.project__popup.open, .employee__popup.open {
     transform: translate(0);
     visibility: visible;
     opacity: 1
@@ -267,4 +267,10 @@ th.sort:hover .sort__icon {
     border: none;
     padding: 8px 15px;
     border-radius: 5px;
+}
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color:rgb(96, 141, 106);
+    margin-top: 10px;
 }
